@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+        
+ <!-- 1st method of doing dependency injection by xml file -->
+ <!--   <bean id="vehicle" class="com.Pragati.demoProject.Car">    </bean> -->
+  
+  <!-- 2nd method of doing dependency injection by using component scan -->
+  <!--   <context:component-scan base-package="com.Pragati.demoProject" /> -->
+ 
+ <bean id="tyre" class="com.Pragati.demoProject.Tyre">
+ 	<!-- <property name="brand" value="MRF"></property> -->
+ 
+ 	<constructor-arg value="Indian Tyre Company"></constructor-arg>
+ 	
+ </bean>
+ 
+ 
+</beans>
